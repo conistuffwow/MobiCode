@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MobiCode Editor</title>
+    <style>
+        html, body { margin: 0; height: 100%; }
+        .cm-editor { height: 100vh; }
+    </style>
+</head>
+<body>
+    <script type="module">
+        import { EditorView, basicSetup } from "https://esm.sh/@codemirror/basic-setup";
+        import { EditorState } from "https://esm.sh/@codemirror/state";
+        import { javascript } from "https://esm.sh/@codemirror/lang-javascript";
+        import { oneDark } from "https://esm.sh/@codemirror/theme-one-dark";
+        
+        const state = EditorState.create({
+            doc:"// Welcome to MobiCode\nconsole.log('Hello, world!');",
+            extensions: [basicSetup, javascript(), oneDark]
+        });
+        
+        const view = new EditorView({
+            state,
+            parent: document.body
+        });
+        
+        window.getCode = () => view.state.doc.toString();
+        window.setCode = (code) => {
+            view.dispatch({
+                changes: { from: 0, to: view.state.doc.length, insert: code }
+            });
+        };
+        
+        // msg from swift
+        window.webkit?.messageHandlers?.editorReady?.postMessage("ready");
+    </script>
+</body>
+</html>

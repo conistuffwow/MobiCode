@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F3F0AF362E14B3E90090DA2E /* MobiCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0AF352E14B3E90090DA2E /* MobiCodeApp.swift */; };
-		F3F0AF382E14B3E90090DA2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0AF372E14B3E90090DA2E /* ContentView.swift */; };
 		F3F0AF3A2E14B3EB0090DA2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F0AF392E14B3EB0090DA2E /* Assets.xcassets */; };
 		F3F0AF3D2E14B3EB0090DA2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F0AF3C2E14B3EB0090DA2E /* Preview Assets.xcassets */; };
 		F3F0AF472E14B3EB0090DA2E /* MobiCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0AF462E14B3EB0090DA2E /* MobiCodeTests.swift */; };
 		F3F0AF512E14B3EB0090DA2E /* MobiCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0AF502E14B3EB0090DA2E /* MobiCodeUITests.swift */; };
 		F3F0AF532E14B3EB0090DA2E /* MobiCodeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0AF522E14B3EB0090DA2E /* MobiCodeUITestsLaunchTests.swift */; };
+		F3F0AF602E14B40D0090DA2E /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0AF5F2E14B40D0090DA2E /* LandingView.swift */; };
+		F3F0AF622E14B5470090DA2E /* NewFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0AF612E14B5470090DA2E /* NewFileView.swift */; };
+		F3F0AF652E14C2690090DA2E /* Editor in Resources */ = {isa = PBXBuildFile; fileRef = F3F0AF642E14C2690090DA2E /* Editor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		F3F0AF322E14B3E90090DA2E /* MobiCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F0AF352E14B3E90090DA2E /* MobiCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiCodeApp.swift; sourceTree = "<group>"; };
-		F3F0AF372E14B3E90090DA2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3F0AF392E14B3EB0090DA2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3F0AF3C2E14B3EB0090DA2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F3F0AF422E14B3EB0090DA2E /* MobiCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,9 @@
 		F3F0AF4C2E14B3EB0090DA2E /* MobiCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F0AF502E14B3EB0090DA2E /* MobiCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiCodeUITests.swift; sourceTree = "<group>"; };
 		F3F0AF522E14B3EB0090DA2E /* MobiCodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiCodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3F0AF5F2E14B40D0090DA2E /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		F3F0AF612E14B5470090DA2E /* NewFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFileView.swift; sourceTree = "<group>"; };
+		F3F0AF642E14C2690090DA2E /* Editor */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Editor; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		F3F0AF342E14B3E90090DA2E /* MobiCode */ = {
 			isa = PBXGroup;
 			children = (
+				F3F0AF642E14C2690090DA2E /* Editor */,
+				F3F0AF612E14B5470090DA2E /* NewFileView.swift */,
+				F3F0AF5F2E14B40D0090DA2E /* LandingView.swift */,
 				F3F0AF352E14B3E90090DA2E /* MobiCodeApp.swift */,
-				F3F0AF372E14B3E90090DA2E /* ContentView.swift */,
 				F3F0AF392E14B3EB0090DA2E /* Assets.xcassets */,
 				F3F0AF3B2E14B3EB0090DA2E /* Preview Content */,
 			);
@@ -215,6 +221,8 @@
 				Base,
 			);
 			mainGroup = F3F0AF292E14B3E90090DA2E;
+			packageReferences = (
+			);
 			productRefGroup = F3F0AF332E14B3E90090DA2E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F0AF652E14C2690090DA2E /* Editor in Resources */,
 				F3F0AF3D2E14B3EB0090DA2E /* Preview Assets.xcassets in Resources */,
 				F3F0AF3A2E14B3EB0090DA2E /* Assets.xcassets in Resources */,
 			);
@@ -257,7 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3F0AF382E14B3E90090DA2E /* ContentView.swift in Sources */,
+				F3F0AF602E14B40D0090DA2E /* LandingView.swift in Sources */,
+				F3F0AF622E14B5470090DA2E /* NewFileView.swift in Sources */,
 				F3F0AF362E14B3E90090DA2E /* MobiCodeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MobiCode/Preview Content\"";
+				DEVELOPMENT_TEAM = 5SR78ASM66;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -450,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MobiCode/Preview Content\"";
+				DEVELOPMENT_TEAM = 5SR78ASM66;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
